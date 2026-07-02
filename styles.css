@@ -361,6 +361,16 @@ hr.rule{ border:0; border-top:1px solid var(--outline-variant); margin:0; }
 .ta .mid{ display:grid; place-items:center; color:var(--tertiary); font-size:20px; font-weight:700; }
 @media (max-width:640px){ .ta .mid{ padding:4px 0; transform:rotate(90deg); } }
 
+/* per-initiative detail bullets */
+.idetail{ margin-top:16px; }
+.idetail .idetail-lbl{ font-size:10px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--outline); }
+.idetail ul{ margin:8px 0 0; padding:0; list-style:none; }
+.idetail li{ position:relative; padding-left:18px; font-size:12.5px; line-height:1.5; color:var(--on-surface-variant); margin-top:7px; }
+.idetail li:first-child{ margin-top:0; }
+.idetail li strong{ color:var(--on-surface); }
+.idetail li::before{ content:""; position:absolute; left:2px; top:7px; width:6px; height:6px; border-radius:50%; background:var(--primary); }
+.init.linchpin .idetail .idetail-lbl{ color:var(--p-30); }
+
 /* initiative 2 emphasis (linchpin) */
 .init.linchpin{ background:var(--primary-container); box-shadow:var(--elev-2); }
 .init.linchpin .badge{ background:var(--primary); color:var(--on-primary); }
